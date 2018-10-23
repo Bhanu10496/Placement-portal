@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Companies</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/companies.js"></script>
+    <script src="../js/validator.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/template.css" rel="stylesheet">
+    <script language="javascript" src="../js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<body style="background-color:#E6E6FA">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/static/html/allStudents.html">All Students</a>
+      </div>
+</nav>
+<br>
+<br>
+<center>
+<h1 style="font-size: 100px; " >Companies</h1>
+<br>
+      <input id="name" type="text" placeholder="name" name="name"/>
+      <input id="position" type="text" placeholder="position" name="position"/>
+      <input id="package" type="text" placeholder="package" name="package"/>
+      <input id="location" type="text" placeholder="location" name="location"/>
+      <button onclick="validate()" class="btn btn-success" type="submit">Register Company</button>
+</center>
+<br>
+<div class="container">
+  <div class="row" style="margin-right: 100px;  padding: 15px; font-size: 20px;">
+    <div class="col-md-3">Name</div>
+    <div class="col-md-3">Position</div>
+    <div class="col-md-3">Package</div>
+    <div class="col-md-3">Location</div>
+  </div>
+</div>
+        <ul class="container" id="companies" >
+        </ul>
+</body>
+</html>

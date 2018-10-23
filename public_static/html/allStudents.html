@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Students</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/allStudents.js"></script>
+    <script src="../js/validator.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/template.css" rel="stylesheet">
+    <script language="javascript" src="../js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<body style="background-color:#E6E6FA">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/static/html/companies.html">Companies</a>
+      </div>
+</nav>
+<br>
+<br>
+<center>
+<h1 style="font-size: 100px; " >All Students</h1>
+<br>
+      <input id="rollNo" type="text" placeholder="rollNo" name="rollNo"/>
+      <input id="name" type="text" placeholder="name" name="name"/>
+      <input id="department" type="text" placeholder="department" name="department"/>
+      <input id="cgpa" type="text" placeholder="cgpa" name="cgpa"/>
+      <button onclick="validate()" class="btn btn-success" type="submit">Add student</button>
+<br><br>
+<div id="edit" style="display: none; background-color: #800000">
+  <h1 style="color: #ffffff">Edit student details</h1>
+      <input id="erollNo" type="text" placeholder="rollNo" name="rollNo"/>
+      <input id="ename" type="text" placeholder="name" name="name"/>
+      <input id="edepartment" type="text" placeholder="department" name="department"/>
+      <input id="ecgpa" type="text" placeholder="cgpa" name="cgpa"/>
+      <button onclick="edit()" class="btn btn-default">Edit student</button>
+      <button onclick="cancel()" class="btn btn-default">Cancel</button>
+<br><br>
+</div>
+
+</center>
+<br>
+<div class="container">
+  <div class="row" style="margin-right: 100px;  padding: 15px; font-size: 20px;">
+    <div class="col-md-3">Roll no.</div>
+    <div class="col-md-3">Name</div>
+    <div class="col-md-3">Department</div>
+    <div class="col-md-3">CGPA</div>
+  </div>
+</div>
+        <ul class="container" id="allStudents" >
+        </ul>
+</body>
+</html>
